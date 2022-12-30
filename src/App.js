@@ -4,10 +4,14 @@ import TelaHabitos from "./pages/tela-habitos/TelaHabitos"
 import TelaHistorico from "./pages/tela-historico/TelaHistorico"
 import TelaHoje from "./pages/tela-hoje/TelaHoje"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useState } from "react";
+import UserContext from "./contexts/UserContext";
 
 export default function App() {
-
+  const [user, setUser] = useState({})
+console.log(user)
   return (
+    <UserContext.Provider value={{ user, setUser }}>
       <BrowserRouter>
         <div className="App">
           <Routes>
@@ -19,7 +23,8 @@ export default function App() {
           </Routes>
         </div>
       </BrowserRouter>
-  );
+    </UserContext.Provider >
+  )
 }
 
 

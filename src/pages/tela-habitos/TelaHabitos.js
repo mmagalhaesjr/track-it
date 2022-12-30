@@ -6,16 +6,14 @@ import { useState } from "react"
 export default function TelaHabitos() {
     const [name, setName] = useState('')
     const [days, setDays] = useState([])
-    const [clicado, setClicado] = useState([])
     const [formAberto, setFormAberto] = useState(false)
     const dias = [{ name: "D", id: 0 }, { name: "S", id: 1 }, { name: "T", id: 2 }, { name: "Q", id: 3 }, { name: "Q", id: 4 }, { name: "S", id: 5 }, { name: "S", id: 6 }]
 
     function selecionarDia(id) {
-        if (!(days.includes(id))) {
+        if (days.includes(id)) {
+            setDays(days.filter(d => d !== id))
+        } else {
             setDays([...days, id])
-        }
-        if (!(clicado.includes(id))) {
-            setClicado([...clicado, id])
         }
     }
 
@@ -28,11 +26,11 @@ export default function TelaHabitos() {
                     <button onClick={() => (formAberto ? setFormAberto(false) : setFormAberto(true))} data-test="habit-create-btn" className="mais">+</button>
                 </div>
                 {formAberto &&
-                    <StyledAdicionarTarefa data-test="habit-create-container" clicado={clicado}>
+                    <StyledAdicionarTarefa data-test="habit-create-container" >
                         <input data-test="habit-name-input" value={name} onChange={(e) => setName(e.target.value)} type="text" placeholder="nome do hábito"></input>
                         <div className="checkbox">
                             {dias.map(d => (
-                                <StyledBotaoForm data-test="habit-day" clicado={clicado.includes(d.id)} onClick={() => selecionarDia(d.id)}>{d.name}</StyledBotaoForm>
+                                <StyledBotaoForm key={d.id} data-test="habit-day" clicado={days.includes(d.id)} onClick={() => selecionarDia(d.id)}>{d.name}</StyledBotaoForm>
                             ))}
                         </div>
                         <div className="botoes">
