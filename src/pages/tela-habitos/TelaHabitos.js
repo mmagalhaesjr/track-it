@@ -34,7 +34,7 @@ export default function TelaHabitos({ porcentagemConcluidos, setPorcentagemConcl
         const url = ('https://mock-api.bootcamp.respondeai.com.br/api/v2/trackit/habits')
         const promise = axios.get(url, config)
         promise.then(res => setHabitos(res.data))
-        promise.catch(err => { console.log(err.response.data.message); err.response.data.message === "Token inválido!" && navigate("/") })
+        promise.catch(() => {navigate("/") })
     }
 
     function selecionarDia(id) {

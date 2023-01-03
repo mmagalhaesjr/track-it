@@ -33,7 +33,7 @@ export default function TelaHoje() {
             setHabitosConcluidos(res.data.filter((h) => h.done === true));
             res.data.length !== 0 && setPorcentagemConcluidos(((res.data.filter((h) => h.done === true)).length) / (res.data.length) * 100)
         });
-        promise.catch(err => { console.log(err.response.data.message); err.response.data.message === "Token inválido!" && navigate("/") })
+        promise.catch(() => {navigate("/") })
     }
 
     function alterarStatusHabito(h) {
