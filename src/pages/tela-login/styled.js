@@ -12,22 +12,10 @@ img {
    margin: 68px auto 35px;
  }
 
- input {
-   display: block;
-   width: 303px;
-   height: 45px;
-   margin: 0 auto 7px;
-   padding-left: 8px;
-   border: 1px solid #d5d5d5;
-   border-radius: 5px;
-   font-size: 20px;
-   ::placeholder {
-     color: #dbdbdb;
-   }
- }
-
  button {
-   display: block;
+   display: flex;
+   justify-content: center;
+   align-items: center;
    width: 303px;
    height: 45px;
    margin: 0 auto 7px;
@@ -38,6 +26,7 @@ img {
    border-radius: 5px;
    
  }
+
 
  a {
    display: block;
@@ -59,7 +48,7 @@ export const StyledInput = styled.input`
     border: 1px solid #d5d5d5;
     border-radius: 5px;
     font-size: 20px;
-    
+    color: ${props => props.disabled ? "#AFAFAF" : "#666666"} ;    
 
     ::placeholder {
       color: #dbdbdb;

@@ -59,7 +59,8 @@ export const StyledBotaoForm = styled.button`
     border: 1px solid #d5d5d5;
     border-radius: 5px;
     font-size: 20px;
-    background-color:${props => props.clicado ? "#d5d5d5" : "#ffffff"};;
+    background-color:${props => props.clicado ? "#d5d5d5" : "#ffffff"};
+    background-color: ${props => props.disabled && "#EFEFEF4D"};
     color:${props => props.clicado ? "#ffffff" : "#d5d5d5"};
 
 `
@@ -103,6 +104,9 @@ input {
         color: #52B6FF;
     }
 .botoes button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 84px;
     height: 35px;
     background-color: #52B6FF;

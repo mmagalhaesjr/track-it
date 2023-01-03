@@ -22,7 +22,7 @@ export default function TelaHoje() {
             "Authorization": `Bearer ${user.token}`
         }
     }
-    // eslint-disable-next-line
+    // eslint-disable-next-line 
     useEffect(() => listarHabitosHoje(), []);
 
     function listarHabitosHoje() {

@@ -33,12 +33,6 @@ $ cd Track-It
 **Installing dependencies**
 
 ```
-$ yarn
-```
-
-_or_
-
-```
 $ npm install
 ```
 
@@ -48,5 +42,5 @@ With all dependencies installed and the environment properly configured, you can
 
 
 ```
-$ yarn start
+$ npm start
 ```
