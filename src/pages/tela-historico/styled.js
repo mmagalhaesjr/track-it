@@ -1,8 +1,9 @@
 import styled from "styled-components"
+import { corFundoTela } from "../../constants/cores"
 
 export const StyledTelaHistorico = styled.section`
 min-height: 840px;
-background-color: #E5E5E5;
+background-color: ${corFundoTela};
 padding-top: 70px;
 display: flex;
 flex-direction: column;

@@ -2,10 +2,11 @@ import { Link } from "react-router-dom"
 import { StyledFooter } from "./styled"
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import 'react-circular-progressbar/dist/styles.css';
+import { useContext } from "react";
+import ProgressContext from "../../contexts/ProgressContext";
 
 export default function Menu() {
-  const porcentagemConcluidos = 100
-  
+  const { porcentagemConcluidos} = useContext(ProgressContext)
   return (
     <StyledFooter data-test="menu">
       <Link data-test="habit-link" to='/habitos' >

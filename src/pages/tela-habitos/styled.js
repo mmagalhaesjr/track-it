@@ -1,8 +1,9 @@
 import styled from "styled-components"
+import { corFundoTela } from "../../constants/cores"
 
 export const StyledTelaHabitos = styled.section`
 min-height: 840px;
-background-color: #E5E5E5;
+background-color: ${corFundoTela};
 padding-top: 70px;
 display: flex;
 flex-direction: column;
@@ -45,6 +46,7 @@ h2{
     align-items: center;
     justify-content:center;
     font-size: 27px;
+    border-radius: 5px;
 }
 
 `
