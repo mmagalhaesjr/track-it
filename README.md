@@ -1,25 +1,27 @@
 # Track It
 
-This App is a Habit Tracker that can be used to help to break bad habits, build new habits and keep track of tasks that the user is already doing. 
+###### [Read this page in English](README-en.md)
+
+Este aplicativo é um rastreador de hábitos que pode ser usado para ajudar a interromper hábitos ruins, criar novos hábitos e acompanhar tarefas que o usuário já está realizando.
 
 <img src= "/src/assets/media/track-it.gif">
 
-This project is part of my personal portfolio and you can try it out [here](http://track-it-steel-zeta.vercel.app/).    
+Este projeto faz parte do meu portfólio pessoal e você pode experimentá-lo [aqui](http://track-it-steel-zeta.vercel.app/).    
 
-## Functionalities
+## Funcionalidades
 
-- Create new habits 
+- Criar novos hábitos
 
-- Check the habits already done
+- Verificar os hábitos já concluídos
 
-- Keep track of your daily habits and record how many task you have already accomplished in the day
+- Acompanhar seus hábitos diários e registrar quantas tarefas você já concluiu no dia
 
-- Check all your registered habits
+- Verificar todos os hábitos registrados
 
 
-## Built With
+## Desenvolvimento
 
-The following tools and frameworks were used in the construction of the project:
+As seguintes ferramentas foram utilizados na construção do projeto:
 <p>
     <img style='margin: 5px;' src="https://img.shields.io/badge/react-app%20-%2320232a.svg?&style=for-the-badge&color=60ddf9&logo=react&logoColor=%2361DAFB"/>
   <img style='margin: 5px;' src='https://img.shields.io/badge/axios%20-%2320232a.svg?&style=for-the-badge&color=informational'>
@@ -33,11 +35,11 @@ The following tools and frameworks were used in the construction of the project:
 - React-Router-Dom
 - React-Circular-Progressbar
 
-## Getting Started
+## Iniciando
 
-### Installing
+### Instalação
 
-**Cloning the Repository**
+**Clonando o repositório**
 
 ```
 $ git clone https://github.com/mmagalhaesjr/Track-It.git
@@ -45,15 +47,15 @@ $ git clone https://github.com/mmagalhaesjr/Track-It.git
 $ cd Track-It
 ```
 
-**Installing dependencies**
+**Instalando as dependências**
 
 ```
 $ npm install
 ```
 
-### Running
+### Executando
 
-With all dependencies installed and the environment properly configured, you can now run the dashboard:
+Com todas as dependências instaladas e o ambiente configurado corretamente, você pode executar o seguinte comando:
 
 
 ```
